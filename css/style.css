@@ -748,6 +748,11 @@ input[type="email"] {
   .contact_email {
     font-size: 12px;
   }
+  
+  .linkedin {
+     font-size: 12px; 
+     color: black
+  }
 
   .contact_card {
     flex-basis: 200px;
