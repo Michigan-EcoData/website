@@ -464,7 +464,7 @@ input[type="email"] {
   border-radius: 20px;
 }
 
-.projects ul li {
+.projects ul li:not(.year-heading) {
   margin: 16px;
   background-color: #ffffff;
   width: 260px;
@@ -511,8 +511,20 @@ input[type="email"] {
   font-size: 30px;
   font-style: italic;
   text-align: left;
-  margin-left: -160px; 
+  margin-bottom: 1rem;
 }
+
+.year-heading {
+  list-style: none;
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  flex-basis: 100%;  
+  background: transparent;
+}
+
+
+
 
 .tab {
   overflow: hidden;
@@ -747,6 +759,11 @@ input[type="email"] {
   .role,
   .contact_email {
     font-size: 12px;
+  }
+  
+  .linkedin {
+     font-size: 12px; 
+     color: black
   }
 
   .contact_card {
