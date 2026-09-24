@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <!--EDIT-->
+  <title>EcoMaps</title>
+  <!--EDIT-->
+  
+  <link rel="icon" type="image/x-icon" href="/images/logo.png">
+  <link rel="stylesheet" href="../css/html5reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/projects.css">
+  <script src="https://kit.fontawesome.com/6c81e0b95a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header_content">
+      <a class="logo_link" href="../index.html"><img class="logo" src="/images/logo.png" alt="EcoData Logo"></a>
+      
+      <!--EDIT-->
+      <h1>EcoMaps</h1> 
+      <!--EDIT-->
+     
+      <i id="hamburger" class="fa-solid fa-bars fa-3x largeicon"></i>
+
+      <nav id="nav_one">
+        <ul>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/calendar.html">Calendar</a></li>
+          <li><a href="/resources.html">Resources</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav id="nav_two">
+        <ul>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/calendar.html">Calendar</a></li>
+          <li><a href="/resources.html">Resources</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-title">
+      <h3 class="lead">Project Leads: <span class="green-text">Jeff Wu</span></h3>
+      <h4 class="lead">Project Co-Leads: <span class="green-text">Aaron Liu, Jaden Singer</span></h4>
+    </div>
+
+    <div class="subsections">
+      <h3 class="section">Goal: </h3>
+      <p>
+        To build upon the iNaturalist app by making their maps more customizable. Currently, we are just testing out the different capabilities of 
+        the iNaturalist app to see exactly what we want to change.
+      </p>
+     </div>
+
+    <div class="subsections">
+      <h3 class="section">Species Distribution Maps [in progress]:</h3>
+      <div class="image-container">
+        <img src="../NEW-project-images/v1.1-01-ME - ecomaps.png" alt="map1">
+        <img src="../NEW-project-images/v1.1-02-MD - ecomaps.png" alt="map2">
+        <img src="../NEW-project-images/v1.1-03-CA - ecomaps.png" alt="map3">
+        <img src="../NEW-project-images/v1.1-04-MI - ecomaps.png" alt="map4">
+        <img src="../NEW-project-images/v1.1-05-TX - ecomaps.png" alt="map5">
+        <img src="../NEW-project-images/v1.1-rand-01 - ecomaps.png" alt="map6">
+        <img src="../NEW-project-images/v1.1-rand-02 - ecomaps.png" alt="map7">
+      </div>
+    </div>
+
+     <div class="subsections">
+      <h3 class="section">Development Process: </h3>
+      <p>
+        Our proof-of-concept was written in Python. We used libraries such as NumPy, GeoPandas, and Plotly to process, 
+        filter and display data from the iNaturalist API. However, for the final app/website, we might consider migrating to Next.js 
+        or a similar framework.
+      </p>
+     </div>
+
+      <div class="subsections">
+        <h3 class="section">Codebase: </h3>
+        <p>
+         <a href="https://github.com/jeffwuu32/ecomaps">Our Github</a>
+        </p>
+     </div>
+
+      <div class="subsections">
+        <h3 class="section">Resources: </h3>
+        <p>
+          <a href="https://api.inaturalist.org/v1/docs/">iNaturalist API v1</a>
+          <a href="https://geopandas.org/en/stable/docs/user_guide/mapping.html#choropleth-maps">GeoPandas</a>
+          <a href="https://plotly.com/python/density-heatmaps/">Plotly</a>
+        </p>
+     </div>
+
+    
+

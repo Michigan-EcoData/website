@@ -53,7 +53,7 @@ header {
 }
 
 nav {
-  font-family: 'Anonymous Pro', monospace;
+font-family: 'Anonymous Pro', monospace;
 }
 
 #nav_one {
@@ -102,11 +102,11 @@ nav {
 
 h1 {
   font-family: 'Anonymous Pro', monospace;
-  font-size: 72px;
+  font-size: 75px;
   text-align: center;
   font-weight: 400;
   margin: 0px;
-  letter-spacing: 0.5vw;
+  letter-spacing: 0.3vw;
 }
 
 .logo_link {
@@ -125,11 +125,6 @@ h1 {
   cursor: pointer;
 }
 
-/* footer */
-/* .fa-instagram {
-    color: rgb(255, 255, 255);
-    background-color: #000;
-} */
 
 footer {
   position: sticky;
@@ -358,11 +353,6 @@ p {
   align-items: center;
 }
 
-/* .comments {
-  display: flex;
-  margin-top: 10px;
-} */
-
 textarea {
   width: 100%;
 }
@@ -462,31 +452,40 @@ input[type="email"] {
 /* projects page */
 
 .projects ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #abc3a2;
-  margin-left: -13px;
-  margin-right: -13px;
-  margin-top: -7px;
-  margin-bottom: -7px;
+  gap: 24px;         
+  background-color:#f2f5f0; 
+  padding: 30px;          
+  border-radius: 20px;
 }
 
-.projects ul li {
-  margin: 20px;
-  background-color: none;
-  width: 100%;
+.projects ul li:not(.year-heading) {
+  margin: 16px;
+  background-color: #ffffff;
+  width: 260px;
+  padding: 16px;
   text-align: center;
-  border: 4px dashed white;
-  /* Add the dashed border style */
-  padding: 10px;
-  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);  /* soft shadow */
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.project-title {
+  display: block;
+  margin-top: 12px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
 }
 
 .projects ul li .project_img {
   display: block;
   width: 100%;
-  border-radius: 50px;
 }
 
 .projects ul li .project_img:hover {
@@ -506,6 +505,26 @@ input[type="email"] {
 .projects ul li a:hover {
   text-decoration: underline;
 }
+
+.project-year {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  font-style: italic;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.year-heading {
+  list-style: none;
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  flex-basis: 100%;  
+  background: transparent;
+}
+
+
+
 
 .tab {
   overflow: hidden;
@@ -545,7 +564,6 @@ input[type="email"] {
   padding: 6px 12px;
   border-top: none;
 }
-
 
 /* Resources Page */
 
@@ -615,7 +633,12 @@ input[type="email"] {
   display: none !important;
 }
 
-
+.in-progress{
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 50vh;  
+}
 
 @media screen and (width > 475px) {
 
@@ -737,6 +760,11 @@ input[type="email"] {
   .contact_email {
     font-size: 12px;
   }
+  
+  .linkedin {
+     font-size: 12px; 
+     color: black
+  }
 
   .contact_card {
     flex-basis: 200px;
@@ -764,10 +792,6 @@ input[type="email"] {
     height: 180px;
   }
 
-  /* .img_border {
-    width: 220px;
-  } */
-
   .resources-icon-container {
     grid-template-columns: 1fr 3fr;
   }
@@ -777,14 +801,12 @@ input[type="email"] {
     width: 100%;
   }
 
-
 }
 
 
 
 @media screen and (width > 750px) {
   h1 {
-    letter-spacing: 1vw;
     font-size: 40px;
   }
 
@@ -838,10 +860,6 @@ input[type="email"] {
     width: 260px;
   }
 
-  /* .img_border {
-    width: 250px;
-  }
- */
   .index-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
